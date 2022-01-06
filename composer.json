@@ -1,0 +1,27 @@
+{
+    "name": "csosc/api-response",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Csosc\\ApiResponse\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "..",
+            "email": "csosc@wsp.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Csosc\\ApiResponse\\Providers\\ApiResponseProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
