@@ -46,7 +46,7 @@ trait ApiResponseTrait
      */
     protected function fail($message, int $code = 1, int $status = 200): \Illuminate\Http\JsonResponse
     {
-        return $this->response(_error($message, $code), $status);
+        return $this->response(_fail($message, $code), $status);
     }
 
 

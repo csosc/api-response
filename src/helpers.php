@@ -45,4 +45,24 @@ if (!function_exists('_error')) {
 
     }
 }
+if (!function_exists('_fail')) {
+    /**
+     * 错误返回
+     *
+     * @param string $message
+     * @param int    $code
+     *
+     * @return array
+     */
+    function _fail(string $message = 'error', int $code = 1): array
+    {
+        return [
+            'code'      => $code,
+            'message'   => $message,
+            'data'      => [],
+            'timeStamp' => time(),
+        ];
+
+    }
+}
 
