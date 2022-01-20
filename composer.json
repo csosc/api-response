@@ -15,7 +15,12 @@
             "email": "csosc@wsp.com"
         }
     ],
-    "require": {},
+    "require": {
+        "ext-json": "*",
+        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0",
+        "php": "^7.3|^8.0"
+    },
     "extra": {
         "laravel": {
             "providers": [

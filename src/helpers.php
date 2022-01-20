@@ -66,3 +66,10 @@ if (!function_exists('_fail')) {
     }
 }
 
+if (!function_exists('isCli')) {
+    function isCli(): bool
+    {
+        return PHP_SAPI == 'cli' && empty($_SERVER['REMOTE_ADDR']);
+    }
+}
+
